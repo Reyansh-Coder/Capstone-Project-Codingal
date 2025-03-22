@@ -1,0 +1,50 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: "Orbitron", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* Orbitron gives a futuristic look */
+    background-color: blueviolet;
+    /* Deep space black */
+    color: #ffffff;
+    /* White text for contrast */
+}
+
+.topnav {
+    overflow: hidden;
+    background: linear-gradient(90deg, #03001e, #7303c0, #ec38bc, #fdeff9);
+    /* A cosmic gradient */
+    padding: 10px 0;
+    border-bottom: 3px solid #ffcc00;
+    /* A glowing effect */
+}
+
+.topnav a {
+    float: left;
+    color: #00ffff;
+    /* Neon cyan, inspired by sci-fi UI */
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.topnav a:hover {
+    background: rgba(255, 0, 255, 0.6);
+    /* Magenta glow effect */
+    color: #ffffff;
+    box-shadow: 0 0 10px #ff00ff;
+    /* Glowing hover effect */
+    transform: scale(1.1);
+    /* Slight zoom effect */
+}
+
+.topnav a.active {
+    background-color: #ffcc00;
+    /* Bright yellow, like a glowing star */
+    color: #0a0a0a;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #ffcc00;
+}
