@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Spice Haven</title>
+
+    <!-- Import Stylish Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:wght@500&display=swap"
+        rel="stylesheet">
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a class="active" href="booknow.html">Book Now</a>
+    </div>
+    <header>
+        <h1>Book Your Luxurious Experience</h1>
+        <h2>Reserve your table now for an unforgettable dining experience.</h2>
+        <a href="index.html" style="color: #ffd700; text-decoration: none; font-size: 18px;">Return to Home</a>
+    </header>
+
+<header class="hero">
+    <h1>Reserve Your Table</h1>
+    <p>Experience luxury dining at its finest</p>
+</header>
+
+<div class="booking-container">
+    <form id="bookingForm" class="booking-form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="phone">Phone (This will be hidden):</label>
+        <input type="password" id="phone" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" required>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" required>
+
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" min="1" required>
+
+        <label for="requests">Special Requests:</label>
+        <textarea id="requests" rows="3"></textarea>
+
+        <button type="submit" class="book-now-btn">Book Now</button>
+    </form>
+
+    <!-- Confirmation Message -->
+    <div id="confirmationMessage" class="hidden">
+        <h2>Thank You!</h2>
+        <p>Your booking has been received. We look forward to serving you.</p>
+    </div>
+</div>

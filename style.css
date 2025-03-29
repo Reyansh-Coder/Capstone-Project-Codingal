@@ -1,71 +1,233 @@
-/* styles.css */
-
+/* Apply a luxurious restaurant theme */
 body {
     margin: 0;
-    font-family: "Orbitron", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    /* Orbitron gives a futuristic look */
-    background-color: blueviolet;
-    /* Deep space black */
-    color: #ffffff;
-    /* White text for contrast */
+    font-family: "Playfair Display", serif;
+    background-color: #ba2346fe;
+    color: #f3efee;
 }
 
+/* Navigation Bar */
 .topnav {
-    overflow: hidden;
-    background: linear-gradient(90deg, #03001e, #7303c0, #ec38bc, #fdeff9);
-    /* A cosmic gradient */
-    padding: 10px 0;
-    border-bottom: 3px solid #ffcc00;
-    /* A glowing effect */
+    background: linear-gradient(90deg, #8B0000, #B22222, #FF6347);
+    padding: 15px 0;
+    text-align: center;
 }
 
 .topnav a {
-    float: left;
-    color: #00ffff;
-    /* Neon cyan, inspired by sci-fi UI */
-    text-align: center;
-    padding: 14px 20px;
+    color: #fff5e6;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
-    transition: 0.3s ease-in-out;
+    padding: 14px 25px;
+    transition: all 0.3s ease;
+    font-family: "Dancing Script", cursive;
 }
 
 .topnav a:hover {
-    background: rgba(255, 0, 255, 0.6);
-    /* Magenta glow effect */
-    color: #ffffff;
-    box-shadow: 0 0 10px #ff00ff;
-    /* Glowing hover effect */
-    transform: scale(1.1);
-    /* Slight zoom effect */
-}
-
-.topnav a.active {
-    background-color: #ffcc00;
-    /* Bright yellow, like a glowing star */
-    color: #0a0a0a;
+    background: rgba(255, 215, 0, 0.8);
+    color: #3e2723;
     border-radius: 5px;
-    box-shadow: 0 0 15px #ffcc00;
-}
-h1 {
-    text-align: center;
-    text-decoration: underline;
-    text-transform: capitalize;
 }
 
-.carousel-container {
+/* Hero Section */
+.hero {
+    background: url('restaurant-background.jpg') center/cover no-repeat;
+    height: 400px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 300px;
-    /* Adjust based on your image height */
+    text-align: center;
+    color: white;
 }
 
-/* Hide all slides by default */
-.myslides {
-    display: none;
-    max-height: 100%;
-    /* Ensure images fit within container */
-    max-width: 100%;
+.hero h1 {
+    font-size: 50px;
+    font-family: "Dancing Script", cursive;
+}
+
+.hero p {
+    font-size: 22px;
+    font-family: "Playfair Display", serif;
+}
+/* Menu Page Styling */
+.menu-container {
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(to right, #7a007a, #b300b3);
+    /* Magenta gradient */
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 90%;
+    box-shadow: 0px 0px 20px rgba(255, 215, 0, 0.4);
+}
+
+/* Menu Title */
+.menu-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 55px;
+    color: #ffd700;
+    /* Gold */
+    text-shadow: 3px 3px 10px rgba(255, 215, 0, 0.8);
+}
+
+.menu-subtitle {
+    font-size: 20px;
+    color: #fff5e1;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+/* Menu Sections */
+.menu-section {
+    margin-top: 40px;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 20px;
+}
+
+.menu-section h2 {
+    font-size: 32px;
+    color: #ffec8b;
+    /* Light gold */
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px rgba(255, 215, 0, 0.6);
+}
+
+/* Table Styling */
+.menu-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 20px;
+    background: rgba(245, 233, 233, 0.945);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.menu-table th {
+    background: rgba(255, 215, 0, 0.8);
+    color: #800080;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.menu-table td {
+    background: rgba(255, 255, 255, 0.963);
+    color: white;
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 215, 0, 0.5);
+}
+
+/* Luxury Section */
+.luxury {
+    background: linear-gradient(to right, #aa7200, #ffcc00);
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 40px;
+    box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.8);
+}
+
+.luxury h2 {
+    color: #fff;
+    font-size: 35px;
+    text-shadow: 3px 3px 8px rgba(255, 233, 0, 0.8);
+}
+
+/* Gold Item Styling */
+.gold {
+    font-weight: bold;
+    color: #fefdf6;
+    text-shadow: 2px 2px 5px rgba(255, 223, 0, 0.9);
+    font-size: 22px;
+}
+/* Booking Page Styling */
+.booking-container {
+    width: 50%;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(255, 215, 0, 0.6);
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffd700;
+    /* Gold */
+    margin: 10px 0 5px;
+}
+
+.booking-form input,
+.booking-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 215, 0, 0.7);
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 16px;
+}
+
+.booking-form input::placeholder,
+.booking-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.book-now-btn {
+    background: linear-gradient(45deg, #ffd700, #ffec8b);
+    color: #8B0000;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.book-now-btn:hover {
+    background: darkgoldenrod;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Hero Section */
+.hero {
+    background: url('restaurant-background.jpg') center/cover no-repeat;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-family: "Dancing Script", cursive;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 22px;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+}
+
+/* Navigation Active Link */
+.topnav .active {
+    background: rgba(255, 215, 0, 0.9);
+    color: #3e2723;
+    border-radius: 8px;
+    padding: 10px 20px;
 }
